@@ -1,0 +1,43 @@
+extends template
+block variables 
+    - var title = "CSGO rating"
+    -
+        var menu = {
+            'Главная':"index.html",
+            'Команда':"Команды.html",
+            'Топ 50':"TOP50.html",
+            'Новости':"Новости.html"
+        }
+
+block content 
+    body 
+        div.header
+            img(src="C:/Users/User/Desktop/new_project/dist/img/csgo.png")
+            +navigation(menu)
+        div.main
+            img(src="C:/Users/User/Desktop/new_project/dist/img/команды.jpg")
+        ul
+            li
+                img(src="C:/Users/User/Desktop/new_project/dist/img/1.png" class = "left")
+                h1 Natus Vincere
+                p Эта команда из Украины является одной из наиболее известных в мире Counter-Strike: Global Offensive (CS:GO). Они имеют в своем составе таких талантливых игроков, как Oleksandr "s1mple" Kostyliev и Егор "flamie" Васильев. За историю своего существования команда Na'Vi выиграла несколько больших турниров, включая Intel Extreme Masters и DreamHack Masters.
+            li 
+                img(src="C:/Users/User/Desktop/new_project/dist/img/2.png" class = "right")
+                h1 ENCE
+                p Команда ENCE из Финляндии стала популярной во всем мире после их впечатляющего выступления на Intel Extreme Masters Katowice 2019, где они заняли второе место. В команде выделяются игроки, такие как Aleksi "allu" Jalli и Jani "Aerial" Jussila.
+            li 
+                img(src="C:/Users/User/Desktop/new_project/dist/img/3.png" class = "left")
+                h1 Team Vitality
+                p Команда Vitality из Франции была создана в 2018 году и быстро стала одной из лучших в мире. Они имеют выдающихся игроков, таких как Mathieu "ZywOo" Herbaut, который является одним из наиболее талантливых игроков CS:GO в мире. Vitality выступает на международных соревнованиях, таких как BLAST Premier и ESL One.
+            li 
+                img(src="C:/Users/User/Desktop/new_project/dist/img/4.png" class = "right")
+                h1 FaZe Clan
+                p FaZe Clan - это международная команда, которая имеет в своем составе игроков из разных стран, таких как Великобритания, Сербия, Норвегия и других. Они славятся своим высоким уровнем индивидуального умения и эффективностью в командной игре. FaZe Clan часто участвует в крупных международных турнирах, таких как ESL Pro League и EPICENTER.
+            li 
+                img(src="C:/Users/User/Desktop/new_project/dist/img/5.png" class = "left")
+                h1 G2 Esports
+                p Gambit из России - одна из самых успешных команд в мире CS:GO. В середине 2021 года они победили на двух крупных турнирах: IEM Katowice и Pinnacle Cup. Gambit известна своим высоким уровнем тактической игры и способностью адаптироваться к разным ситуациям на карте.
+            li 
+                img(src="C:/Users/User/Desktop/new_project/dist/img/6.png" class = "right")
+                h1 Gambit Esports
+                p G2 из Франции является одной из наиболее популярных и известных команд в мире CS:GO. Они имеют в своем составе ряд талантливых игроков, таких как капитан команды Richard "shox" Papillon и звезда Кенни "kennyS" Шруаб. G2 Esports участвует во множестве международных турниров, показывая впечатляющую игру и борясь за титулы.

@@ -1,0 +1,211 @@
+gap = 13%
+style-p(size, size2)
+  width size
+  height size2
+
+body
+  background-image url("C:/Users/User/Desktop/new_project/dist/img/fone.jpg")
+  background-size cover
+  background-position center center
+  background-repeat no-repeat
+  color white
+  
+.header
+  text-align center
+  img
+    display block
+    margin 0 auto
+    style-p(600px, 150px)
+  .navigation
+    display flex
+    flex-direction row
+    margin 0 gap
+    margin-top 50px
+    background #404040
+    justify-content space-evenly
+    a
+      margin 10px 30px
+      font-family fantasy
+      font-size 2vw
+      text-decoration none
+      color black
+      transition 1s ease-out
+      &:hover
+        color red
+      
+.novos
+  h1
+    font-size 3vw
+    display block
+    text-align center
+    margin 0px auto 10px
+    width 74%
+    background grey
+
+.main
+  color black
+  margin 0 gap 0px
+  background grey
+  padding 25px
+  img
+    display block
+    margin 0 auto
+    padding-top 20px
+    width 80%
+    height 50%
+  .text
+    font-family fantasy
+    h1
+      font-size 3vw
+      display block
+      text-align center
+    p
+      font-size 20px
+      margin 10px 10%
+      text-align justify
+
+
+.footer
+	display flex
+	width 72%
+	margin -10px auto 0
+	padding 0.5% 1%
+	background-color #242323
+	text-align left
+	justify-content space-between
+
+  
+ul
+  width 70.8%
+  display flex
+  background grey
+  flex-direction column
+  margin -5px auto 10px
+  li
+    list-style-type none
+    padding-top 15px
+    padding-bottom 15px
+    padding-right 30px
+    & img
+      width 30%
+    & p
+      text-align justify
+      font-size 1.5vw
+    h1
+      text-align center
+    .left
+      float left
+      padding-right 30px
+    .right
+      float right
+      padding-left 30px
+
+
+.graf
+  font-size 2vw
+  font-family fantasy
+  summary
+    display flex
+    justify-content center
+  & div
+    h4
+      display flex
+      justify-content center
+    span
+      font-size 1.3vw
+    input
+      margin-left 28%
+      vertical-align: middle
+      width 1vw
+      height 1vw
+
+.filters
+  font-size 2vw
+  font-family fantasy
+  summary
+    display flex
+    justify-content center
+  & div
+    span
+      display flex 
+      flex-direction row
+      justify-content center
+    input
+      margin: 1.1% auto 0 ;
+      display: flex;
+      width 30%
+      height 1vw
+      
+
+.col
+  display flex
+  flex-direction row
+  margin-left 10%
+  input
+    width 30%
+
+
+.Sort
+  font-size 2vw
+  font-family fantasy
+  summary
+    display flex
+    justify-content center
+  & div
+    display flex
+    justify-content center
+    select
+      margin-top 1.1%
+      width 10%
+      height 1.5vw
+      
+button
+    padding 0.5em 1.5em
+    background-color transparent
+    font-size 0.9em
+    color white
+    border 2px solid black
+    border-radius 0.4em
+    margin-left 42%
+    text-align center
+    margin 0 auto
+    display block
+
+table
+  width 100%
+  border-collapse collapse
+  th
+    border-collapse collapse
+    font-size 2vw
+    border 5px solid black
+  td
+    border-collapse collapse
+    font-size 2vw
+    border 5px solid black
+
+@media(max-width 700px)
+  .header
+    .navigation
+      flex-wrap wrap
+      a
+        font-size 2.5vw
+        width 30%
+  .main
+    img
+      padding-top 5px
+      width 85%
+  ul
+    width 65.5%
+    li
+      padding-right 0px
+      & img 
+        width 75%
+        margin-left 8%
+      p
+        margin-right 30px
+      .left
+        float none
+        padding-right 0px
+      .right
+        float none
+        padding-left 0px

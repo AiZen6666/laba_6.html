@@ -1,0 +1,507 @@
+extends template
+block variables
+    -var title = "CSGO rating"
+    -
+        var menu = {
+            'Главная':"index.html",
+            'Команда':"Команды.html",
+            'Топ 50':"TOP50.html",
+            'Новости':"Новости.html"
+        }
+
+    -
+        var Elements = [
+            {
+                'top': '1',
+                'name':'ZywOo',
+                'country':'Франция',
+                'team':'Vitality',
+                'rating':'1.25',
+                'kd':'1.37'
+            },
+            {
+                'top': '2',
+                'name':'s1mple',
+                'country':'Украина',
+                'team':'Navi',
+                'rating':'1.25',
+                'kd':'1.37'
+            },
+            {
+                'top': '3',
+                'name':'sh1ro',
+                'country':'Россия',
+                'team':'cloud9',
+                'rating':'1.21',
+                'kd':'1.42'
+            },
+            {
+                'top': '4',
+                'name':'device',
+                'country':'Дания',
+                'team':'Astralis',
+                'rating':'1.16',
+                'kd':'1.25'
+            },
+            {
+                'top': '5',
+                'name':'NiKo',
+                'country':'Босния и Герцеговина',
+                'team':'G2',
+                'rating':'1.15',
+                'kd':'1.19'
+            },
+            {
+                'top': '6',
+                'name':'blameF',
+                'country':'Дания',
+                'team':'Astralis',
+                'rating':'1.14',
+                'kd':'1.24'
+            },
+            {
+                'top': '7',
+                'name':'coldzero',
+                'country':'Бразилия',
+                'team':'sk',
+                'rating':'1.13',
+                'kd':'1.21'
+            },
+            {
+                'top': '8',
+                'name':'KSCERATO',
+                'country':'Бразилия',
+                'team':'Furia',
+                'rating':'1.13',
+                'kd':'1.24'
+            },
+            {
+                'top': '9',
+                'name':'XANTARES',
+                'country':'Турция',
+                'team':'Eternal-fire',
+                'rating':'1.13',
+                'kd':'1.15'
+            },
+            {
+                'top': '10',
+                'name':'ropz',
+                'country':'Эстония',
+                'team':'FAZE',
+                'rating':'1.12',
+                'kd':'1.20'
+            },
+            {
+                'top': '11',
+                'name':'Jame',
+                'country':'Россия',
+                'team':'Virtus Pro',
+                'rating':'1.12',
+                'kd':'1.28'
+            },
+            {
+                'top': '12',
+                'name':'oskar',
+                'country':'Чехия',
+                'team':'Sinners',
+                'rating':'1.12',
+                'kd':'1.18'
+            },
+            {
+                'top': '13',
+                'name':'El1an',
+                'country':'Россия',
+                'team':'Entropiq',
+                'rating':'1.11',
+                'kd':'1.20'
+            },
+            {
+                'top': '14',
+                'name':'xsepower',
+                'country':'Россия',
+                'team':'Forze',
+                'rating':'1.10',
+                'kd':'1.21'
+            },
+            {
+                'top': '15',
+                'name':'frozen',
+                'country':'Словакия',
+                'team':'mouz',
+                'rating':'1.10',
+                'kd':'1.16'
+            },
+            {
+                'top': '16',
+                'name':'woxic',
+                'country':'Турция',
+                'team':'eternal-fire',
+                'rating':'1.10',
+                'kd':'1.18'
+            },
+            {
+                'top': '17',
+                'name':'Ax1le',
+                'country':'Россия',
+                'team':'cloud9',
+                'rating':'1.10',
+                'kd':'1.16'
+            },
+            {
+                'top': '18',
+                'name':'kennyS',
+                'country':'Франция',
+                'team':'G2',
+                'rating':'1.09',
+                'kd':'1.15'
+            },
+            {
+                'top': '19',
+                'name':'HEN1',
+                'country':'Бразилия',
+                'team':'Immortals',
+                'rating':'1.09',
+                'kd':'1.20'
+            },
+            {
+                'top': '20',
+                'name':'huNter',
+                'country':'Босния и Герцеговина',
+                'team':'G2',
+                'rating':'1.09',
+                'kd':'1.12'
+            },
+            {
+                'top': '21',
+                'name':'Twistzz',
+                'country':'Канада',
+                'team':'FAZE',
+                'rating':'1.09',
+                'kd':'1.15'
+            },
+            {
+                'top': '22',
+                'name':'yuurih',
+                'country':'Бразилия',
+                'team':'Furia',
+                'rating':'1.08',
+                'kd':'1.13'
+            },
+            {
+                'top': '23',
+                'name':'mir',
+                'country':'Россия',
+                'team':'Team Spirit',
+                'rating':'1.08',
+                'kd':'1.12'
+            },
+            {
+                'top': '24',
+                'name':'GuardiaN',
+                'country':'Словакия',
+                'team':'FAZE',
+                'rating':'1.08',
+                'kd':'1.14'
+            },
+            {
+                'top': '25',
+                'name':'hades',
+                'country':'Польша',
+                'team':'9INE',
+                'rating':'1.08',
+                'kd':'1.14'
+            },
+            {
+                'top': '26',
+                'name':'syrsoN',
+                'country':'Германия',
+                'team':'BIG',
+                'rating':'1.08',
+                'kd':'1.14'
+            },
+            {
+                'top': '27',
+                'name':'FREDDyFROG',
+                'country':'Швеция',
+                'team':'RED reserve',
+                'rating':'1.08',
+                'kd':'1.13'
+            },
+            {
+                'top': '28',
+                'name':'dream3r',
+                'country':'Балгария',
+                'team':'Fiend',
+                'rating':'1.08',
+                'kd':'1.15'
+            },
+            {
+                'top': '29',
+                'name':'nawwk',
+                'country':'Швеция',
+                'team':'Apeks',
+                'rating':'1.08',
+                'kd':'1.17'
+            },
+            {
+                'top': '30',
+                'name':'allu',
+                'country':'Финляндия',
+                'team':'Ence',
+                'rating':'1.07',
+                'kd':'1.12'
+            },
+            {
+                'top': '31',
+                'name':'Magick',
+                'country':'Дания',
+                'team':'Vitality',
+                'rating':'1.07',
+                'kd':'1.14'
+            },
+            {
+                'top': '32',
+                'name':'poizon',
+                'country':'Балгария',
+                'team':'Complexity',
+                'rating':'1.07',
+                'kd':'1.14'
+            },
+            {
+                'top': '33',
+                'name':'valde',
+                'country':'Дания',
+                'team':'North',
+                'rating':'1.07',
+                'kd':'1.11'
+            },
+            {
+                'top': '34',
+                'name':'Brehze',
+                'country':'США',
+                'team':'NRG',
+                'rating':'1.07',
+                'kd':'1.09'
+            },
+            {
+                'top': '35',
+                'name':'ELiGE',
+                'country':'США',
+                'team':'Liquid',
+                'rating':'1.07',
+                'kd':'1.09'
+            },
+            {
+                'top': '36',
+                'name':'CeRq',
+                'country':'Балгария',
+                'team':'NRG',
+                'rating':'1.07',
+                'kd':'1.13'
+            },
+            {
+                'top': '37',
+                'name':'electroNic',
+                'country':'Россия',
+                'team':'Navi',
+                'rating':'1.07',
+                'kd':'1.11'
+            },
+            {
+                'top': '38',
+                'name':'NAF',
+                'country':'Канада',
+                'team':'Liquid',
+                'rating':'1.07',
+                'kd':'1.14'
+            },
+            {
+                'top': '39',
+                'name':'WorldEdit',
+                'country':'Россия',
+                'team':'FlipSid3',
+                'rating':'1.07',
+                'kd':'1.14'
+            },
+            {
+                'top': '40',
+                'name':'draken',
+                'country':'ШВеция',
+                'team':'Ninja of pandas',
+                'rating':'1.06',
+                'kd':'1.12'
+            },
+            {
+                'top': '41',
+                'name':'autimatic',
+                'country':'США',
+                'team':'EG',
+                'rating':'1.06',
+                'kd':'1.09'
+            },
+            {
+                'top': '42',
+                'name':'FL1T',
+                'country':'Россия',
+                'team':'Forze',
+                'rating':'1.06',
+                'kd':'1.11'
+            },
+            {
+                'top': '43',
+                'name':'JUGi',
+                'country':'Дания',
+                'team':'Heroic',
+                'rating':'1.06',
+                'kd':'1.14'
+            },
+            {
+                'top': '44',
+                'name':'fer',
+                'country':'Бразилия',
+                'team':'SK',
+                'rating':'1.06',
+                'kd':'1.08'
+            },
+            {
+                'top': '45',
+                'name':'k0nfig',
+                'country':'Дания',
+                'team':'Dignitas',
+                'rating':'1.06',
+                'kd':'1.07'
+            },
+            {
+                'top': '46',
+                'name':'broky',
+                'country':'Латвия',
+                'team':'FAZE',
+                'rating':'1.06',
+                'kd':'1.14'
+            },
+            {
+                'top': '47',
+                'name':'Ethan',
+                'country':'США',
+                'team':'NRG',
+                'rating':'1.05',
+                'kd':'1.06'
+            },
+            {
+                'top': '48',
+                'name':'dycha',
+                'country':'Польша',
+                'team':'ENCE',
+                'rating':'1.05',
+                'kd':'1.06'
+            },
+            {
+                'top': '49',
+                'name':'nex',
+                'country':'Германия',
+                'team':'BIG',
+                'rating':'1.05',
+                'kd':'1.08'
+            },
+            {
+                'top': '50',
+                'name':'slaxz',
+                'country':'Германия',
+                'team':'ALTERNATE aTTaX',
+                'rating':'1.05',
+                'kd':'1.06'
+            }
+        ]
+
+    - var SortVal = ['Топ', 'Ник', 'Страна', 'Команда', 'Rating', 'K/D']
+    - var SortChan = ['Возрастанию', 'Убыванию']
+    - var SortNumber = ['Первый уровень: ', 'Второй уровень: ', 'Третий уровень: ']
+
+
+block content
+    body
+        .header
+            img(src="C:/Users/User/Desktop/new_project/dist/img/csgo.png")
+            +navigation(menu)
+        .main
+            .setting
+                form.graf
+                    details
+                        summary График
+                        div.value 
+                            h4 Значение по оси OX:
+                            input(type="radio" name="OX" value="team")
+                            span Команда
+                            input(type="radio" name="OX" value="country")
+                            span Страна
+                            input(type="radio" name="OX" value="name")
+                            span Игрок
+                        div.result1
+                            h4 Результат 
+                            input(type="checkbox" name="result1" value="kd")
+                            span Максимальное КД
+                            input(type="checkbox" name="result1" value="rating")
+                            span Максимальный рейтинг
+                        button Построить 
+                form.filters
+                    details
+                        summary Фильтры
+                        div
+                            span Ник игрока:
+                            input(type="text")
+                        div
+                            span Страна
+                            input(type="text")
+                        div 
+                            span Команда
+                            input(type="text")
+                        div.col 
+                            span Rating от
+                            input(type="number" min="1")
+                            span до
+                            input(type="number" max="1.5")
+                        div.col
+                            span K/D от
+                            input(type="number" min="1")
+                            span до
+                            input(type="number" max="1.5")
+                        button Поиск
+
+                form.Sort
+                    details 
+                        summary Сортировка
+                        each item in SortNumber 
+                            div 
+                                span= item
+                                select 
+                                    each value in SortVal 
+                                        option
+                                            span= value 
+                                span по
+                                select
+                                    each value in SortChan 
+                                        option
+                                            span= value 
+                        button Отсортировать
+            
+            table 
+                tr 
+                    th Топ
+                    th НИК игрока
+                    th Страна
+                    th Команда игрока
+                    th Rating
+                    th K/D
+                
+                each item in Elements 
+                    tr 
+                        td= item.top
+                        td= item.name
+                        td= item.country
+                        td= item.team
+                        td= item.rating
+                        td= item.kd
+
+
+
+                

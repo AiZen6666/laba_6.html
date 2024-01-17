@@ -1,0 +1,21 @@
+mixin navigation(menu)
+    div.navigation
+        each value, key in menu
+            a(href= value)= key
+
+block variables
+
+block header
+    <!DOCTYPE html>
+        html(lang="ru")
+            head
+                meta(charset="UTF-8")
+                meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+                title #{title}
+                link(rel="stylesheet", href="css/main.css")
+                link(rel="stylesheet", href="css/table.css")
+            block content
+            block footer
+            div.footer
+                p &#169 Охлопков А.И., Б9121-09.03.04/6 2023-2024
+                a(href="#") &#9993 Контакты

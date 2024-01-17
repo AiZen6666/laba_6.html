@@ -1,0 +1,16 @@
+extends template
+block variables
+    -var title = "CSGO rating"
+    -
+        var menu = {
+            'Главная':"index.html",
+            'Команда':"Команды.html",
+            'Топ 50':"TOP50.html",
+            'Новости':"Новости.html"
+        }
+block content
+    body.novos
+        div.header
+            img(src="C:/Users/User/Desktop/new_project/dist/img/csgo.png")
+            +navigation(menu)
+        h1 Сайт еще на разработке3
